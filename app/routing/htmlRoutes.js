@@ -9,17 +9,12 @@
   
       switch (path) {
   
-          case "/":
-          // return displayRoot(path, req, res);
           case "/survey":
               return serveHTML(`${path}.html`, res);
   
           default:
               return serveHTML("/home.html", res);
       }
-      // Here we use the fs package to read our index.html file
-  
-  
   }
   
   const serveHTML = (filePath, res) => {
